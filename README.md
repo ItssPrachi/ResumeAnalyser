@@ -5,28 +5,15 @@ Definition: Environment setup involves creating an isolated Python environment a
 Detailed Explanation:
 
 A virtual environment is a self-contained directory that contains a Python installation for a particular version of Python, plus a number of additional packages. Using a virtual environment allows you to manage project-specific dependencies, regardless of what dependencies every other project has.
-
-bash
-
-Verify
-
-Open In Editor
-Edit
-Copy code
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+
 python3 -m venv venv: This command creates a new virtual environment named "venv" in the current directory.
 source venv/bin/activate: This activates the virtual environment. On Windows, use venv\Scripts\activate.
 pip install -r requirements.txt: This installs all the Python packages listed in the requirements.txt file.
+
 The requirements.txt file should include all necessary libraries, such as:
-
-
-Verify
-
-Open In Editor
-Edit
-Copy code
 PyMuPDF==1.19.0
 nltk==3.6.2
 spacy==3.1.0
